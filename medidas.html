@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-contenido">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+
+            <div class="marca">
+                <h1>Walter Vega Joyas</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes.html">¿Quiénes somos?</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="medidas.html">¿Cómo calcular un talle?</a></li>
+        </ol>
+    </nav>
+
+    <main>
+
+        <h2>Calculá tu talle de anillo</h2>
+
+        <p>
+            Encontrá el talle ideal para tu anillo de manera sencilla.
+        </p>
+
+        <!-- SECCIÓN 1 -->
+        <section id="medir-anillo">
+
+            <div class="contenido-talle">
+
+                <div>
+                    <h3>1. Medir un anillo que ya tenés</h3>
+
+                    <p>
+                        Medí con una regla el diámetro interior del anillo,
+                        de un extremo al otro, en milímetros.
+                    </p>
+
+                    <label for="diametro">Diámetro interior (mm):</label>
+
+                    <input
+                        type="number"
+                        id="diametro"
+                        step="0.1"
+                        placeholder="Ej. 17.2"
+                    >
+
+                    <button onclick="boton();">
+                        Calcular talle
+                    </button>
+
+                    <p>Tu talle es: <span id="resultado"></span></p>
+                </div>
+
+                <div class="video">
+
+                    <iframe
+                        width="100%"
+                        height="315"
+                        src="https://www.youtube.com/embed/VIDEO_1"
+                        title="Cómo medir el diámetro de un anillo"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECCIÓN 2 -->
+        <section id="medir-dedo">
+
+            <div class="contenido-talle">
+
+                <div>
+                    <h3>2. Medir el dedo</h3>
+
+                    <p>
+                        Rodeá tu dedo con una tira de papel o hilo y medí
+                        la longitud obtenida en milímetros.
+                    </p>
+
+                    <label for="circunferencia">
+                        Circunferencia del dedo (mm):
+                    </label>
+
+                    <input
+                        type="number"
+                        id="circunferencia"
+                        step="0.1"
+                        placeholder="Ej. 54"
+                    >
+
+                    <button onclick="boton();">
+                        Calcular talle
+                    </button>
+
+                    <p>Tu talle es: <span id="resultado2"></span></p>
+                </div>
+
+                <div class="video">
+
+                    <iframe
+                        width="100%"
+                        height="315"
+                        src="https://www.youtube.com/embed/VIDEO_2"
+                        title="Cómo medir el dedo para elegir un anillo"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECCIÓN 3 -->
+        <section id="tabla-talles">
+
+            <h3>3. Tabla de medidas</h3>
+
+            <p>
+                Consultá las medidas de referencia para encontrar
+                el talle correspondiente.
+            </p>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Talle</th>
+                        <th>Diámetro interior (mm)</th>
+                        <th>Circunferencia (mm)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>10</td>
+                        <td>15,9</td>
+                        <td>50</td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td>16,5</td>
+                        <td>52</td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td>17,2</td>
+                        <td>54</td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td>17,8</td>
+                        <td>56</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+            <div class="video">
+
+                <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/VIDEO_3"
+                    title="Cómo consultar la tabla de talles de anillos"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <p>📱 11 2646-8498</p>
+                <p>✉️ waltervegajoyas@gmail.com</p>
+            </div>
+
+            <div class="footer-redes">
+                <h3>Seguinos</h3>
+                <a href="https://www.instagram.com/waltervegajoyas" target="_blank">Instagram.com/waltervegajoyas</a>
+                <a href="https://www.facebook.com/waltervegajoyas" target="_blank">Facebook.com/waltervegajoyas</a>
+            </div>
+
+        </div>
+
+        <div class="footer-derechos">
+            <p>© 2026 - Todos los derechos reservados</p>
+            <p>Falcone Dupuy Elisa M. - Talento Tech</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

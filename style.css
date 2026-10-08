@@ -1,0 +1,304 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* =========================
+   CONTENIDO GENERAL
+   ========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: whitesmoke;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+main {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #cccccc;
+}
+a:active {
+    color: white;
+}
+/* TÍTULO PRINCIPAL */
+h1, #nuestrosP{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+/*   HEADER   */
+.header {
+    width: 100%;
+    height: 7rem; /* 112px de alto  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-contenido {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.logo img {
+    width: 3rem;
+    height: auto;
+    display: block;
+}
+.marca h1 {
+    margin: 0;
+}
+/*   NAV   */
+nav {
+    padding: 1rem 5%;
+    border-bottom: 1px solid #ccc;
+}
+nav h1 {
+    margin: 0;
+}
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+nav a {
+    text-decoration: none;
+}
+nav ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    text-align: center;
+}
+/* footer */
+footer {
+    margin-top: 3rem;
+    padding: 2rem 5%;
+    text-align: center;
+}
+.footer-contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 3rem;
+}
+.footer-contacto h3,
+.footer-redes h3 {
+    margin-bottom: 1rem;
+}
+.footer-contacto p {
+    margin: 0.5rem 0;
+}
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer-redes a {
+    text-decoration: none;
+}
+.footer-derechos {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 0.1rem solid #ccc;
+}
+.footer-derechos p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+/* =========================
+   QUIÉNES SOMOS
+   ========================= */
+#historia,
+#valores {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.8rem;
+}
+#historia h2,
+#valores h2 {
+    margin-top: 0;
+}
+#historia p,
+#valores p {
+    line-height: 1.6;
+}
+/* SECCIONES DE QUIÉNES SOMOS */
+#historia,
+#valores {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+}
+/* TÍTULOS */
+#historia h2,
+#valores h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+/* TEXTO */
+#historia p,
+#valores p {
+    line-height: 1.6;
+    margin: 0.8rem 0;
+}
+/* =========================
+   CARDS
+   ========================= */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.card {
+    width: 28%;
+    min-width: 15rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.card h3 {
+    margin: 1rem 0 0.5rem;
+}
+.card p {
+    margin: 0.5rem 0 1rem;
+}
+/* =========================
+   INDEX
+   ========================= */
+.index-banner,
+.index-presentacion,
+.index-imagen,
+.index-destacados,
+.index-banner-final {
+    width: 90%;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+/* Banner principal */
+.index-banner {
+    text-align: center;
+}
+.banner img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    display: block;
+}
+.index-banner div {
+    padding: 1.5rem;
+}
+/* Presentación */
+.index-presentacion {
+    padding: 1.5rem;
+    text-align: center;
+}
+.index-presentacion h2 {
+    margin-top: 0;
+}
+.index-presentacion p {
+    margin: 1rem 0 1.5rem;
+}
+/* Imagen intermedia */
+.index-imagen img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    display: block;
+}
+/* Productos destacados */
+.index-destacados {
+    padding: 1.5rem;
+}
+.index-destacados h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+/* Banner final */
+.index-banner-final {
+    text-align: center;
+}
+.index-banner-final img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    display: block;
+}
+.index-banner-final div {
+    padding: 1.5rem;
+}
+/* =========================
+   ENLACES / BOTONES
+   ========================= */
+.card a,
+.index-banner a,
+.index-presentacion a,
+.index-banner-final a {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+/* =========================
+   MEDIDAS.HTML
+   ========================= */
+.video {
+    width: 100%;
+    min-height: 15rem;
+    margin-top: 2rem;
+    border: 1px dashed #999;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contenido-talle {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.contenido-talle > div {
+    width: 50%;
+}
