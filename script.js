@@ -1,19 +1,27 @@
-function boton(){
-    alert('En reparación, sentimos las molestias.')
-}
-/*
-function calcularPorDiametro(diametro) {
-    let diametro = parseFloat(document.getElementById(diametro).value);
-    let talle = (diametro * 3.1416) - 40;
-    document.getElementById("resultado").innerText = talle;
-}
-function calcularPorCircunferencia() {
-    let valor = parseFloat(document.getElementById("circunferencia").value);
+//Funciones para calcular talles
+function calcularPorDiametro(){
+    let valor = parseFloat(document.getElementById('diametro').value);
+    let elResultado = document.getElementById("resultadoDiametro");
     if (isNaN(valor)) {
-        alert("Por favor ingresa un número");
+        elResultado.innerText = "Ingresa un valor válido";
+        elResultado.className = "resultado-error";
         return;
     }
-    let talle = valor - 40;
-    document.getElementById("resultado2").innerText = talle.toFixed(1);
+
+    let talle = 'Su talle es: ' + ((valor * 3.1416) - 40).toFixed(1);
+    elResultado.innerText = talle;
+    elResultado.className = "resultado-destacado";
 }
-    */
+
+function calcularPorCircunferencia() {
+    let valor = parseFloat(document.getElementById('circunferencia').value);
+    let elResultado = document.getElementById("resultadoCircunferencia");
+    if (isNaN(valor)) {
+        elResultado.innerText = "Ingresa un número válido";
+        elResultado.className = "resultado-error";
+        return;
+    }
+    let talle = 'Su talle es: ' + (valor - 40).toFixed(1);
+    elResultado.innerText = talle;
+    elResultado.className = "resultado-destacado";
+}
